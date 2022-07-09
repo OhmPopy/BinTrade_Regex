@@ -1,6 +1,8 @@
 # BinTrade_Regex
 Regex .net in c++. Convert from System/regex/system/text/regularexpressions. Full test
+
 not yet optimized for running speed but acceptable
+
 
 use like c#
 
