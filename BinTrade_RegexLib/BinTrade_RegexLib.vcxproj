@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E028513F-0DB2-4BB2-BACC-B5C2BFDB995C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RegexNetLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>BinTrade_RegexLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\DEBUG</OutDir>
+    <IntDir>..\..\..\..\DEBUG\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\RELEASE</OutDir>
+    <IntDir>..\..\..\..\RELEASE\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.;../;../../;./RegexWpf;./Core;./Other;../../RegexWpf;../../Core;../../Other</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <OutputFile>../../../../bin/BinTrade/Libraryd/BinTrade_Regexd.dll</OutputFile>
+      <ImportLibrary>../../../../lib/BinTrade_Regexd.lib</ImportLibrary>
+    </Link>
+    <Lib>
+      <OutputFile>../../../../lib/$(ProjectName)d.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;REGEXNETLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;REGEXNETLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.;../;../../;./RegexWpf;./Core;./Other;../../RegexWpf;../../Core;../../Other</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <OutputFile>../../../../bin/BinTrade/Library/BinTrade_Regex.dll</OutputFile>
+      <ImportLibrary>../../../../lib/BinTrade_Regex.lib</ImportLibrary>
+    </Link>
+    <Lib>
+      <OutputFile>../../../../lib/$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;REGEXNETLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Com\ComCultureInfo.h" />
+    <ClInclude Include="Com\GetCultureInfo.h" />
+    <ClInclude Include="Com\NumberFormatInfo.h" />
+    <ClInclude Include="Core\CultureInfo.h" />
+    <ClInclude Include="Core\ICollection.h" />
+    <ClInclude Include="Core\IComparer.h" />
+    <ClInclude Include="Core\Exception.h" />
+    <ClInclude Include="Core\objectForRegex.h" />
+    <ClInclude Include="Core\TimeSpan.h" />
+    <ClInclude Include="Core\TypeDef.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Other\natsu.unicode.h" />
+    <ClInclude Include="Other\stringbuilder.h" />
+    <ClInclude Include="Other\stringhelper.h" />
+    <ClInclude Include="Other\UtilsChar.h" />
+    <ClInclude Include="Other\UtilsCollections.h" />
+    <ClInclude Include="Other\UtilsString.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RegexWpf\Regex.h" />
+    <ClInclude Include="RegexWpf\RegexBoyerMoore.h" />
+    <ClInclude Include="RegexWpf\RegexCapture.h" />
+    <ClInclude Include="RegexWpf\RegexCaptureCollection.h" />
+    <ClInclude Include="RegexWpf\RegexCharClass.h" />
+    <ClInclude Include="RegexWpf\RegexCode.h" />
+    <ClInclude Include="RegexWpf\RegexFCD.h" />
+    <ClInclude Include="RegexWpf\RegexGroup.h" />
+    <ClInclude Include="RegexWpf\RegexGroupCollection.h" />
+    <ClInclude Include="RegexWpf\RegexInterpreter.h" />
+    <ClInclude Include="RegexWpf\RegexMatch.h" />
+    <ClInclude Include="RegexWpf\RegexMatchCollection.h" />
+    <ClInclude Include="RegexWpf\RegexMatchTimeoutException.h" />
+    <ClInclude Include="RegexWpf\RegexNode.h" />
+    <ClInclude Include="RegexWpf\RegexOptions.h" />
+    <ClInclude Include="RegexWpf\RegexParseError.h" />
+    <ClInclude Include="RegexWpf\RegexParser.h" />
+    <ClInclude Include="RegexWpf\RegexReplacement.h" />
+    <ClInclude Include="RegexWpf\RegexRunner.h" />
+    <ClInclude Include="RegexWpf\RegexRunnerFactory.h" />
+    <ClInclude Include="RegexWpf\RegexTree.h" />
+    <ClInclude Include="RegexWpf\RegexWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Com\ComCultureInfo.cpp" />
+    <ClCompile Include="Com\ComCultureInfo.Init.cpp" />
+    <ClCompile Include="Com\GetCultureInfo.cpp" />
+    <ClCompile Include="Com\NumberFormatInfo.cpp" />
+    <ClCompile Include="Core\CultureInfo.cpp" />
+    <ClCompile Include="Core\TimeSpan.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Other\natsu.unicode.cpp" />
+    <ClCompile Include="Other\stringhelper.cpp" />
+    <ClCompile Include="Other\UtilsChar.cpp" />
+    <ClCompile Include="Other\UtilsString.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\Regex.cpp" />
+    <ClCompile Include="RegexWpf\RegexBoyerMoore.cpp" />
+    <ClCompile Include="RegexWpf\RegexCapture.cpp" />
+    <ClCompile Include="RegexWpf\RegexCaptureCollection.cpp" />
+    <ClCompile Include="RegexWpf\RegexCharClass.cpp" />
+    <ClCompile Include="RegexWpf\RegexCode.cpp" />
+    <ClCompile Include="RegexWpf\RegexFCD.cpp" />
+    <ClCompile Include="RegexWpf\RegexGroup.cpp" />
+    <ClCompile Include="RegexWpf\RegexGroupCollection.cpp" />
+    <ClCompile Include="RegexWpf\RegexInterpreter.cpp" />
+    <ClCompile Include="RegexWpf\RegexMatch.cpp" />
+    <ClCompile Include="RegexWpf\RegexMatchCollection.cpp" />
+    <ClCompile Include="RegexWpf\RegexMatchTimeoutException.cpp" />
+    <ClCompile Include="RegexWpf\RegexNode.cpp" />
+    <ClCompile Include="RegexWpf\RegexParser.cpp" />
+    <ClCompile Include="RegexWpf\RegexReplacement.cpp" />
+    <ClCompile Include="RegexWpf\RegexRunner.cpp" />
+    <ClCompile Include="RegexWpf\RegexTree.cpp" />
+    <ClCompile Include="RegexWpf\RegexWriter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

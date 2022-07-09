@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="RegexWpf">
+      <UniqueIdentifier>{33eefe50-5f2f-4a64-b9a3-143b72a30c87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{d8ca0805-a30e-4757-b024-0c59906e5252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{bdb581c9-1ce6-45ac-9a79-fc3e9217a1ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Com">
+      <UniqueIdentifier>{f00df0ca-0ff5-4d59-8d45-28bf1d720b36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TypeDef.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CultureInfo.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\Regex.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexBoyerMoore.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexCapture.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexCaptureCollection.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexCode.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexCharClass.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexFCD.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexGroup.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexGroupCollection.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexInterpreter.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexMatch.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexMatchCollection.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexMatchTimeoutException.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexNode.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexOptions.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexParseError.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexParser.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexReplacement.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexRunner.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexRunnerFactory.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexTree.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexWpf\RegexWriter.h">
+      <Filter>RegexWpf</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\UtilsString.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\stringbuilder.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\stringhelper.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\UtilsCollections.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ICollection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IComparer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Com\ComCultureInfo.h">
+      <Filter>Com</Filter>
+    </ClInclude>
+    <ClInclude Include="Com\GetCultureInfo.h">
+      <Filter>Com</Filter>
+    </ClInclude>
+    <ClInclude Include="Com\NumberFormatInfo.h">
+      <Filter>Com</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Exception.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\objectForRegex.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\UtilsChar.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\natsu.unicode.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TimeSpan.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CultureInfo.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\Regex.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexBoyerMoore.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexCapture.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexCaptureCollection.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexCode.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexCharClass.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexFCD.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexGroup.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexGroupCollection.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexInterpreter.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexMatch.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexMatchCollection.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexMatchTimeoutException.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexNode.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexParser.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexReplacement.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexRunner.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexTree.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexWpf\RegexWriter.cpp">
+      <Filter>RegexWpf</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\stringhelper.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\UtilsString.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Com\ComCultureInfo.Init.cpp">
+      <Filter>Com</Filter>
+    </ClCompile>
+    <ClCompile Include="Com\GetCultureInfo.cpp">
+      <Filter>Com</Filter>
+    </ClCompile>
+    <ClCompile Include="Com\NumberFormatInfo.cpp">
+      <Filter>Com</Filter>
+    </ClCompile>
+    <ClCompile Include="Com\ComCultureInfo.cpp">
+      <Filter>Com</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\UtilsChar.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\natsu.unicode.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TimeSpan.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

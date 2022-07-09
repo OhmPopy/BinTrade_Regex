@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{6e2ccfd1-e203-4663-a1eb-ac3e8f940dc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestCases">
+      <UniqueIdentifier>{76774eeb-9c48-4ba7-acf6-9b6cb6634d91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RegexTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Other\UnitTestAssert.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\UnitTestAssert.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexParserTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\AttRegexTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\CaptureCollectionTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\CaptureCollectionTests2.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\GroupCollectionReadOnlyDictionaryTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\GroupCollectionTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\MatchCollectionTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.Cache.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.EscapeUnescape.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.GetGroupNames.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.Groups.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.KnownPattern.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.Match.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.MultipleMatches.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.Replace.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.Split.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\Regex.UnicodeChar.Tests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexConstructorTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexCountTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexCultureTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexCharacterSetTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexGroupNameTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexHelpers.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\RegexMatchTimeoutExceptionTests.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\random.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
